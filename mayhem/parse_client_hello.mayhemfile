@@ -1,0 +1,7 @@
+project: moproxy
+target: parse-client-hello
+
+cmds:
+  - cmd: /parse_client_hello
+  - cmd: /parse_client_hello_no_inst @@
+    libfuzzer: false
