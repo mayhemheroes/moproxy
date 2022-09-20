@@ -20,6 +20,9 @@ use crate::{
     proxy::{Address, Destination, ProxyServer},
 };
 
+#[cfg(fuzzing)]
+pub use tls_parser::parse_client_hello;
+
 #[derive(Debug)]
 pub struct NewClient {
     left: TcpStream,
